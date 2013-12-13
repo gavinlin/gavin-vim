@@ -44,6 +44,11 @@ sudo apt-get install exuberant-ctags
 
 ##copy .vim and .vimrc to ~
 
+##install plugin
+```
+:BundleInstall
+```
+
 enjoy it
 
 Shortcuts
