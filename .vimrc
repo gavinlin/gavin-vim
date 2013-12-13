@@ -1,5 +1,4 @@
 
-
 " Vundle{
     set nocompatible
     set shell=/bin/sh
@@ -15,7 +14,7 @@
     Bundle 'gmarik/vundle'
     
     Bundle 'scrooloose/nerdtree'
-    map <leader>n :NERDTreeToggle<CR>
+    map <F9> :NERDTreeToggle<CR>
     let NERDTreeHighlightCursorline=1
     let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
     let g:netrw_home='~/bak'
@@ -30,8 +29,6 @@
 
     Bundle 'Valloric/YouCompleteMe'
     "youcompleteme  默认tab  s-tab 和自动补全冲突
-    let g:ycm_key_list_select_completion = ['<Down>']
-    let g:ycm_key_list_previous_completion = ['<Up>']
     let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
     Bundle 'scrooloose/syntastic'
@@ -85,15 +82,21 @@
                 \ ]
     let g:rbpt_max = 40
     let g:rbpt_loadcmd_toggle = 0
+    au VimEnter * RainbowParenthesesToggle
+    au Syntax * RainbowParenthesesLoadRound
+    au Syntax * RainbowParenthesesLoadSquare
+    au Syntax * RainbowParenthesesLoadBraces
 
     Bundle 'Lokaltog/vim-easymotion'
+    Bundle 'Raimondi/delimitMate'
+    Bundle 'plasticboy/vim-markdown'
 "}
 
 " General settings{
     set background=dark
     filetype plugin indent on
 
-    set guifont=YaheiMonaco\ 10
+    set guifont=YaheiMonaco:h16
     set fenc=utf-8 
     set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936 
 
@@ -179,6 +182,8 @@
     set scrolloff=3
     set nofoldenable
     set list
+    set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+    
 "}
 
 " VIM Formatting{

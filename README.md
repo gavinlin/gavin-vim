@@ -45,40 +45,30 @@ sudo apt-get install exuberant-ctags
 ##copy .vim and .vimrc to ~
 
 ##install plugin
-```
+``` bash
 :BundleInstall
 ```
 
 enjoy it
 
 Shortcuts
-1.F5 checksyntax 运行checksyntax 
-2.F7 open nerdtree 
-3.F8 open tagbar
-4.<leader>ig 
-5.,ch highlight column
-6.use Shift + right/left to switch buffer
-7.ctrl + \ xptemplate
-8.<leader>ff <leader>fb <leader>fd
 
-plugin
-1.NERD_tree
-2.NERD_commenter
-3.miniBufExploer
-4.checksyntax
-5.DoxygenToolkit
-6.indent_guides
-7.omnicppcomplete
-8.supertab
-9.tagbar
-10.xpt
-11.Fuzzyfinder
+1. F9 tagbar
+2. ,p ctrlp 
+3. ctrl + h/j/k/l windows switch
+4. ,,+w  ,,+f[e]  easymotion
+5. ,cc ,cu comment
 
 ctags
+
+``` bash
 ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
 :set tags=./../tags  <------tags's path
+```
 
 cscope
+
+``` bash
 find . -name '*.h' -o -name '*.c' -o -name '*.cpp' -o -name '*.java' -o -name '*.cs' > cscope.files
 cscope -b
-
+```
