@@ -42,7 +42,18 @@ sudo apt-get install exuberant-ctags
 
 ##install cscope
 
-##copy .vim and .vimrc to ~
+##link .vim and .vimrc to ~
+
+``` bash
+ln -s g-vim/.vim ~/.vim
+ln -s g-vim/.vimrc ~/.vimrc
+```
+
+##download submodule
+``` bash
+git submodule init
+git submodule update
+```
 
 ##install plugin
 ``` bash
