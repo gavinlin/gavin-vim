@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/gavinlin/source/android4src/out/target/product/crespo'
+let g:netrw_dirhist_2='/etc/init'
+let g:netrw_dirhist_3='/home/gavinlin/.vim'
+let g:netrw_dirhist_4='/home/gavinlin/.vim/bundle/supertab/plugin'
+let g:netrw_dirhist_5='/home/gavinlin/source/ffmpegpoj/iPlayer'
+let g:netrw_dirhist_6='/home/gavinlin/.vim'
