@@ -57,8 +57,11 @@
 
     "快速插入代码片段
     Bundle 'SirVer/ultisnips'
-    let g:UltiSnipsExpandTrigger = "<tab>"
-    let g:UltiSnipsJumpForwardTrigger = "<tab>"
+    "let g:UltiSnipsExpandTrigger = "<tab>"
+    "let g:UltiSnipsJumpForwardTrigger = "<tab>"
+    let g:UltiSnipsExpandTrigger="<c-j>"
+    let g:UltiSnipsJumpForwardTrigger="<c-j>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-k>"
     "定义存放代码片段的文件夹 .vim/snippets下，使用自定义和默认的，将会的到全局，有冲突的会提示
     let g:UltiSnipsSnippetDirectories=["snippets", "bundle/ultisnips/UltiSnips"]
 
@@ -97,7 +100,12 @@
     set background=dark
     filetype plugin indent on
 
-    set guifont=YaheiMonaco:h16
+    if has ("mac")
+        set guifont=YaheiMonaco:h16
+    else
+        set guifont=YaheiMonaco\ 12
+    endif
+
     set fenc=utf-8 
     set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936 
 
