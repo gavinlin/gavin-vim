@@ -15,7 +15,7 @@
     Bundle 'gmarik/vundle'
     
     Bundle 'scrooloose/nerdtree'
-    map <F9> :NERDTreeToggle<CR>
+    map <F8> :NERDTreeToggle<CR>
     let NERDTreeHighlightCursorline=1
     let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
     let g:netrw_home='~/bak'
@@ -94,6 +94,7 @@
     Bundle 'Lokaltog/vim-easymotion'
     Bundle 'Raimondi/delimitMate'
     Bundle 'plasticboy/vim-markdown'
+    Bundle 'vim-scripts/cscope.vim'
 "}
 
 " General settings{
