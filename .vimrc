@@ -95,6 +95,7 @@
     Bundle 'Raimondi/delimitMate'
     Bundle 'plasticboy/vim-markdown'
     Bundle 'vim-scripts/cscope.vim'
+    Bundle 'vim-scripts/bufexplorer.zip'
 "}
 
 " General settings{
