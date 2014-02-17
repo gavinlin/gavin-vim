@@ -96,6 +96,10 @@
     Bundle 'plasticboy/vim-markdown'
     Bundle 'vim-scripts/cscope.vim'
     Bundle 'vim-scripts/bufexplorer.zip'
+    Bundle 'vim-scripts/DoxygenToolkit.vim'
+    let g:DoxygenToolkit_authorName="Gavin Lin"
+
+    Bundle 'tpope/vim-fugitive'
 "}
 
 " General settings{
